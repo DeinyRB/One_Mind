@@ -16,32 +16,3 @@ form.addEventListener('submit', (e)  => {
   e.preventDefault();
 });
 
-// Crear un evento global
-main.addEventListener('click', (e) => {
-  if(e.target.id === 'feliz') {
-    // Agregar clases a body
-    body.removeAtribute('class');
-    body.classList.add('feliz');
-
-    //Agregar la clase a la seccion
-    seccionPrincipal.classList.add('feliz-s');
-  }
-
-  if(e.target.id === 'triste') {
-    body.removeAtribute('class');
-    body.classList.add('triste');
-  }
-
-  if(e.target.id === 'tranquilo') {
-    body.removeAtribute('class');
-    body.classList.add('tranqilo');
-  }
-
-  if(e.target.id === 'enojado') {
-    body.removeAtribute('class');
-    body.classList.add('enojado');
-
-    // Agregar la clase a la seccion
-    seccionPrincipal.classList.add('enojado-s');
-  }
-});
